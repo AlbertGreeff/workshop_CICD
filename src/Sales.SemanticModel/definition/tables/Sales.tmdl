@@ -301,10 +301,5 @@ table Sales
 	annotation LinkedQueryName = Sales
 
 	annotation PBI_ResultType = Table
-
-measure 'Sales Qty (LY)' = CALCULATE([Sales Qty], SAMEPERIODLASTYEAR('Calendar'[Date]))
-	formatString: #,##0
-	lineageTag: 019cddab-955e-72e4-afbd-612d555de377
-
-	annotation PBI_NavigationStepName = Navigation
+epName = Navigation
 
